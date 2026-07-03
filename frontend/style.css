@@ -1,0 +1,182 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:linear-gradient(180deg,#050505,#171717);
+  color:#fff;
+  min-height:100vh;
+}
+
+.container{
+  width:92%;
+  max-width:430px;
+  margin:0 auto;
+  padding:24px 0;
+}
+
+.topo{
+  text-align:center;
+  margin-bottom:22px;
+}
+
+.topo h1{
+  font-size:32px;
+  margin-bottom:8px;
+}
+
+.topo p{
+  color:#bdbdbd;
+  font-size:15px;
+}
+
+.card{
+  background:#1d1d1d;
+  border:1px solid #2c2c2c;
+  border-radius:20px;
+  padding:22px;
+  box-shadow:0 10px 30px rgba(0,0,0,.35);
+  margin-bottom:18px;
+}
+
+.card h2{
+  font-size:22px;
+  margin-bottom:16px;
+}
+
+.info p{
+  margin-bottom:10px;
+  font-size:16px;
+  color:#e5e5e5;
+}
+
+.botoes{
+  margin-top:24px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+button{
+  width:100%;
+  border:none;
+  cursor:pointer;
+  font-size:18px;
+  padding:17px;
+  border-radius:14px;
+  font-weight:bold;
+  transition:.2s;
+}
+
+button:active{
+  transform:scale(.98);
+}
+
+.btn-vou{
+  background:#16a34a;
+  color:white;
+}
+
+.btn-nao{
+  background:#dc2626;
+  color:white;
+}
+
+.resumo{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  gap:10px;
+  margin-bottom:18px;
+}
+
+.box{
+  border-radius:16px;
+  padding:14px 8px;
+  text-align:center;
+}
+
+.box h3{
+  font-size:13px;
+  margin-bottom:8px;
+}
+
+.box span{
+  font-size:32px;
+  font-weight:bold;
+}
+
+.confirmado{
+  background:#15803d;
+}
+
+.recusado{
+  background:#b91c1c;
+}
+
+.pendente{
+  background:#4b5563;
+}
+
+.listas{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:16px;
+}
+
+.listas ul{
+  list-style:none;
+  margin-top:10px;
+}
+
+.listas li{
+  padding:12px 0;
+  border-bottom:1px solid #333;
+  font-size:16px;
+}
+
+.listas li:last-child{
+  border:none;
+}
+
+.oculto{
+  display:none;
+}
+
+select{
+  width:100%;
+  padding:16px;
+  border-radius:14px;
+  border:none;
+  font-size:17px;
+  margin:16px 0;
+  background:#2b2b2b;
+  color:white;
+}
+
+#btnEntrar{
+  background:#16a34a;
+  color:white;
+}
+
+#btnTrocarJogador{
+  background:#333;
+  color:white;
+  margin-top:14px;
+}
+
+@media(min-width:900px){
+  .container{
+    max-width:1100px;
+  }
+
+  .listas{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .botoes{
+    flex-direction:row;
+  }
+}

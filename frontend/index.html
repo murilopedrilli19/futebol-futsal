@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Futebol Futsal 🖤⚽</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <header class="topo">
+      <h1>Futebol Futsal 🖤⚽</h1>
+      <p>Confirmação de presença para o próximo jogo</p>
+    </header>
+
+    <section id="telaLogin" class="card">
+  <h2>Quem é você?</h2>
+
+  <select id="selectJogador">
+    <option value="">Selecione seu nome</option>
+  </select>
+
+  <button id="btnEntrar">Continuar</button>
+</section>
+
+<section id="painelJogador" class="card oculto">
+  <h2 id="mensagemJogador">Olá 👋</h2>
+  <button id="btnTrocarJogador">Trocar jogador</button>
+</section>
+
+    <section class="card jogo">
+      <h2>Próximo jogo</h2>
+
+      <div class="info">
+        <p><strong>📅 Data:</strong> Sábado </p>
+        <p><strong>🕗 Horário:</strong> 09:00</p>
+        <p><strong>📍 Local:</strong> QUADRA 12</p>
+      </div>
+
+      <div class="botoes">
+        <button class="btn-vou">✅ Vou jogar</button>
+        <button class="btn-nao">❌ Não vou</button>
+      </div>
+    </section>
+
+    <section class="resumo">
+      <div class="box confirmado">
+        <h3>✅ Confirmados</h3>
+        <span id="totalConfirmados">0</span>
+      </div>
+
+      <div class="box recusado">
+        <h3>❌ Não vão</h3>
+        <span id="totalNaoVao">0</span>
+      </div>
+
+      <div class="box pendente">
+        <h3>⬜ Pendentes</h3>
+        <span id="totalPendentes">0</span>
+      </div>
+    </section>
+
+    <section class="listas">
+      <div class="card">
+        <h2>✅ Confirmados</h2>
+        <ul id="listaConfirmados"></ul>
+      </div>
+
+      <div class="card">
+        <h2>❌ Não vão</h2>
+        <ul id="listaNaoVao"></ul>
+      </div>
+
+      <div class="card">
+        <h2>⬜ Ainda não responderam</h2>
+        <ul id="listaPendentes"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
